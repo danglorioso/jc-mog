@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "JumboCode Team Compare",
@@ -34,6 +35,7 @@ export default function RootLayout({
           <main>{children}</main>
         </div>
        </body>
+       <Analytics />
     </html>
   );
 }
